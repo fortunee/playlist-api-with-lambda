@@ -25,6 +25,7 @@ exports.handler = async (event,) => {
     const data = await documentClient.put(params).promise();
     const response = {
       statusCode: 200,
+      body: JSON.stringify(data),
     };
 
     return response;

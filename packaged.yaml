@@ -17,7 +17,7 @@ Resources:
   CreatePlaylistFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://test-playlist-api2/9c3e9e4c7bb23ecd857fc5d54ca5a20b
+      CodeUri: s3://test-playlist-api2/bc0a6ca06ae5c3396d4ac29f15deb5f5
       Handler: create-playlist.handler
       Policies: AmazonDynamoDBFullAccess
       Runtime: nodejs14.x
@@ -30,7 +30,7 @@ Resources:
   GetPlaylistFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://test-playlist-api2/9c3e9e4c7bb23ecd857fc5d54ca5a20b
+      CodeUri: s3://test-playlist-api2/bc0a6ca06ae5c3396d4ac29f15deb5f5
       Handler: get-playlist.handler
       Policies: AmazonDynamoDBFullAccess
       Runtime: nodejs14.x
