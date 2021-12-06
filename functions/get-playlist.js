@@ -3,7 +3,7 @@ const documentClient = new AWS.DynamoDB.DocumentClient();
 
 exports.handler = async (event) => {
   const params = {
-    TableName: "playlist",
+    TableName: "playlists",
   };
 
   try {
@@ -11,9 +11,6 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
       body: JSON.stringify(data.Items),
     };
   } catch (err) {
