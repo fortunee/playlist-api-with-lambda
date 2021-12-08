@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import * as core from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
 import { TestPlaylistApiStack } from '../lib/test-playlist-api-stack';
 
-const app = new core.App();
+const app = new cdk.App();
 new TestPlaylistApiStack(app, 'TestPlaylistApiStack');
